@@ -1,0 +1,141 @@
+body.blue-theme {
+    background: linear-gradient(135deg, #e3f0ff 0%, #b3d8fd 100%);
+    color: #133a5e;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+    color: #fff;
+    padding: 1.5em 0 1em 0;
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.15);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-left: 2em;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 8px #1565c0a0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 0.5em 1.2em;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+nav a:hover, nav a:focus {
+    background: #fff;
+    color: #1976d2;
+    box-shadow: 0 2px 8px #1976d233;
+}
+
+main {
+    padding: 3em 1em 2em 1em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2.5em;
+    background: rgba(255,255,255,0.95);
+    border-radius: 18px;
+    padding: 2em 2em 1.5em 2em;
+    box-shadow: 0 6px 32px rgba(25, 118, 210, 0.10), 0 1.5px 6px #90caf9;
+    position: relative;
+    overflow: hidden;
+}
+
+section h1, section h2, section h3 {
+    color: #1976d2;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+.service {
+    margin-bottom: 1.5em;
+    padding: 1em 1.5em;
+    background: linear-gradient(90deg, #e3f2fd 60%, #bbdefb 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #1976d222;
+    transition: transform 0.15s;
+}
+
+.service:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 6px 24px #1976d244;
+}
+
+a, .service a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.service a, section a {
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+    padding: 0.5em 1.2em;
+    background: #1976d2;
+    color: #fff !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #1976d233;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.service a:hover, section a:hover {
+    background: #42a5f5;
+    color: #fff;
+    box-shadow: 0 4px 16px #1976d244;
+}
+
+footer {
+    background: linear-gradient(90deg, #1565c0 60%, #42a5f5 100%);
+    color: #fff;
+    text-align: center;
+    padding: 1.5em 0 1em 0;
+    margin-top: 3em;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    box-shadow: 0 -4px 16px #1976d233;
+}
+
+@media (max-width: 700px) {
+    main {
+        padding: 1em 0.5em;
+    }
+    section {
+        padding: 1.2em 0.7em 1em 0.7em;
+    }
+    .logo {
+        margin-left: 0.5em;
+        font-size: 1.5em;
+    }
+    nav ul {
+        gap: 0.7em;
+    }
+}
